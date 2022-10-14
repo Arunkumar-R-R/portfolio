@@ -7,7 +7,7 @@ export function SocialIcon(props) {
   const { icon, label, source } = data;
 
   const socialSpring = useSpring({
-    from: { y: 10, opacity: 0 },
+    from: { y: 15, opacity: 0 },
     to: { y: 0, opacity: 1 },
     delay: 300,
   });
