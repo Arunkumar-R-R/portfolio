@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { animated, useSpring, useSpringRef } from "@react-spring/web";
-import { useEffect } from "react";
+import { animated, useSpring } from "@react-spring/web";
 
 export function SocialIcon(props) {
   const { data } = props;
