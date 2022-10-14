@@ -68,34 +68,40 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-[74px] w-full">
-          <h2 className="text-lg font-semibold">About Me</h2>
-          <p className="text-base my-[14px] text-custom_black-800">
-            Hello there, Iam Arunkumar working in <strong>TCS</strong> as
-            Front-End Developer with client <strong>Credit Suisse</strong>. Over
-            past two years, i’ve build Components, written unit testcases, Fixed
-            production UI Bugs. I have strong passion for building Functional
-            User Interface, Reusable and accessible Components.
-          </p>
-          <div className="flex flex-col">
-            <h3 className="text-base font-semibold">Skills</h3>
-            <div className="flex flex-wrap">
-              {skills.map((skill, index) => {
-                return (
-                  <Chip key={index} icon={skill.icon}>
-                    {skill.tech}
-                  </Chip>
-                );
-              })}
+          <animated.div style={{ ...springs }}>
+            <h2 className="text-lg font-semibold">About Me</h2>
+            <p className="text-base my-[14px] text-custom_black-800">
+              Hello there, Iam Arunkumar working in <strong>TCS</strong> as
+              Front-End Developer with client <strong>Credit Suisse</strong>.
+              Over past two years, i’ve build Components, written unit
+              testcases, Fixed production UI Bugs. I have strong passion for
+              building Functional User Interface, Reusable and accessible
+              Components.
+            </p>
+            <div className="flex flex-col">
+              <h3 className="text-base font-semibold">Skills</h3>
+              <div className="flex flex-wrap">
+                {skills.map((skill, index) => {
+                  return (
+                    <Chip key={index}>
+                      <div className="mr-[6px]">{skill.icon}</div>
+                      {skill.tech}
+                    </Chip>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          </animated.div>
         </section>
         <section className="mb-[74px]">
-          <h2 className="text-lg font-semibold">Side Project</h2>
-          <div className="mt-[16px]">
-            {Projects.map((project, index) => {
-              return <Card key={index} projectData={project}></Card>;
-            })}
-          </div>
+          <animated.div style={{ ...springs }}>
+            <h2 className="text-lg font-semibold">Side Project</h2>
+            <div className="mt-[16px]">
+              {Projects.map((project, index) => {
+                return <Card key={index} projectData={project}></Card>;
+              })}
+            </div>
+          </animated.div>
         </section>
       </main>
     </div>
