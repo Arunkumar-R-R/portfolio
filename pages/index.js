@@ -23,6 +23,7 @@ export default function Home() {
   useEffect(() => {
     api.start({
       to: { y: 0, opacity: 1 },
+      delay: 100,
     });
   }, [api]);
 
@@ -38,26 +39,26 @@ export default function Home() {
             <h1 className="text-xl font-semibold text-custom_black-800	">
               Arunkumar R R
             </h1>
-          </animated.div>
-          <div className="flex items-center flex-wrap">
-            <div className="text-lg font-bold text-custom_black-700 mr-8">
-              Front-end Developer
+            <div className="flex items-center flex-wrap">
+              <div className="text-lg font-bold text-custom_black-700 mr-8">
+                Front-end Developer
+              </div>
+              <Link href={"./Arunkumar_R_R.pdf"}>
+                <a
+                  target="_blank"
+                  className="p-[4px] rounded-sm flex text-tiny font-medium text-primaryColor cursor-pointer custom_sm:mt-[12px] hover:bg-primaryColor/[0.1]"
+                >
+                  <PdfIcon className={"mr-1"} />
+                  View Resume
+                </a>
+              </Link>
             </div>
-            <Link href={"./Arunkumar_R_R.pdf"}>
-              <a
-                target="_blank"
-                className="p-[4px] rounded-sm flex text-tiny font-medium text-primaryColor cursor-pointer custom_sm:mt-[12px] hover:bg-primaryColor/[0.1]"
-              >
-                <PdfIcon className={"mr-1"} />
-                View Resume
-              </a>
-            </Link>
-          </div>
-          <div className="flex mt-2 mb-6 flex-wrap">
-            {areaOfInterest.map((interest, index) => {
-              return <Chip key={index}>{interest}</Chip>;
-            })}
-          </div>
+            <div className="flex mt-2 mb-6 flex-wrap">
+              {areaOfInterest.map((interest, index) => {
+                return <Chip key={index}>{interest}</Chip>;
+              })}
+            </div>
+          </animated.div>
           <div className="flex flex-wrap">
             {socialMediaLinks.map((socialMediaLink, index) => {
               return (
