@@ -67,7 +67,6 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-[74px] w-full">
-          <animated.div style={{ ...springs }}></animated.div>
           <h2 className="text-lg font-semibold">About Me</h2>
           <p className="text-base my-[14px] text-custom_black-800">
             Hello there, Iam Arunkumar working in <strong>TCS</strong> as
@@ -90,8 +89,6 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-[74px]">
-          {/* <animated.div style={{ ...springs }}>
-          </animated.div> */}
           <h2 className="text-lg font-semibold">Side Project</h2>
           <div className="mt-[16px]">
             {Projects.map((project, index) => {
