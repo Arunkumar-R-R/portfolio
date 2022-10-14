@@ -10,8 +10,22 @@ import {
   socialMediaLinks,
 } from "./../utils/portfolioData";
 import { PdfIcon } from "./../utils/SvgIcon.js";
+import { animated, useSpring, useSpringRef } from "@react-spring/web";
+import { useEffect } from "react";
 
 export default function Home() {
+  const api = useSpringRef();
+  const springs = useSpring({
+    ref: api,
+    from: { y: 10, opacity: 0 },
+  });
+
+  useEffect(() => {
+    api.start({
+      to: { y: 0, opacity: 1 },
+    });
+  }, [api]);
+
   return (
     <div>
       <Head>
@@ -20,9 +34,11 @@ export default function Home() {
       </Head>
       <main className="flex flex-col lg:w-auto w-[700px] lg:px-4 justify-center item-center mx-auto">
         <section className="my-[74px]">
-          <h1 className="text-xl font-semibold text-custom_black-800	">
-            Arunkumar R R
-          </h1>
+          <animated.div style={{ ...springs }}>
+            <h1 className="text-xl font-semibold text-custom_black-800	">
+              Arunkumar R R
+            </h1>
+          </animated.div>
           <div className="flex items-center flex-wrap">
             <div className="text-lg font-bold text-custom_black-700 mr-8">
               Front-end Developer
@@ -51,6 +67,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-[74px] w-full">
+          <animated.div style={{ ...springs }}></animated.div>
           <h2 className="text-lg font-semibold">About Me</h2>
           <p className="text-base my-[14px] text-custom_black-800">
             Hello there, Iam Arunkumar working in <strong>TCS</strong> as
@@ -73,6 +90,8 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-[74px]">
+          {/* <animated.div style={{ ...springs }}>
+          </animated.div> */}
           <h2 className="text-lg font-semibold">Side Project</h2>
           <div className="mt-[16px]">
             {Projects.map((project, index) => {
