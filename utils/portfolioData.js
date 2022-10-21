@@ -41,17 +41,9 @@ const javascriptFramework = [
     tech: "Angular",
     icon: AngularIcon,
   },
-  {
-    tech: "Nextjs",
-    icon: NextjsIcon,
-  },
 ];
 
 const cssEcosystem = [
-  {
-    tech: "Tailwindcss",
-    icon: TailwindcssIcon,
-  },
   {
     tech: "SASS",
     icon: SassIcon,
