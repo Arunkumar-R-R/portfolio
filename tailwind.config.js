@@ -6,10 +6,11 @@ module.exports = {
   ],
   theme: {
     fontSize: {
+      extraTiny:'12px',
       tiny: "14px",
       base: "16px",
       lg: "20px",
-      xl: "31.25px",
+      xl: "24px",
     },
     screens: {
       lg: { max: "700px" },
@@ -28,6 +29,7 @@ module.exports = {
         800: "#040404",
       },
       primaryColor: "#0267BC",
+      textPrimary: "#212121",
     },
   },
   plugins: [],
