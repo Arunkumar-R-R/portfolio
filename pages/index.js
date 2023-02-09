@@ -36,14 +36,14 @@ export default function Home() {
       <main className="flex flex-col lg:w-auto w-[700px] lg:px-4 justify-center item-center mx-auto">
         <section className="my-[74px]">
           <animated.div style={{ ...springs }}>
-            <h1 className="text-xl font-semibold text-custom_black-800	">
+            <h1 className="text-xl font-semibold text-custom_black-800	leading-[36px]">
               Arunkumar R R
             </h1>
-            <div className="flex items-center flex-wrap">
-              <div className="text-lg font-bold text-custom_black-700 mr-8">
-                Front-end Developer
+            <div className="flex items-center flex-wrap mt-2">
+              <div className="text-tiny text-textPrimary mr-8">
+                Frontend Developer
               </div>
-              <Link href={"./Arunkumar_R_R.pdf"}>
+              <Link href={"./Arunkumar R R (Frontend developer).pdf"}>
                 <a
                   target="_blank"
                   className="p-[4px] rounded-sm flex text-tiny font-medium text-primaryColor cursor-pointer custom_sm:mt-[12px] hover:bg-primaryColor/[0.1]"
@@ -53,7 +53,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <div className="flex mt-2 mb-6 flex-wrap">
+            <div className="flex my-6 flex-wrap">
               {areaOfInterest.map((interest, index) => {
                 return <Chip key={index}>{interest}</Chip>;
               })}
@@ -67,10 +67,10 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section className="mb-[74px] w-full">
+        <section className="mb-[54px] w-full">
           <animated.div style={{ ...springs }}>
             <h2 className="text-lg font-semibold">About Me</h2>
-            <p className="text-base my-[14px] text-custom_black-800">
+            <p className="text-tiny my-[14px] text-textPrimary">
               Hello there, Iam Arunkumar working in <strong>TCS</strong> as
               Front-End Developer with client <strong>Credit Suisse</strong>.
               Over past two years, i’ve build Components, written unit
@@ -80,7 +80,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col">
               <h3 className="text-base font-semibold">Skills</h3>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap my-[14px]">
                 {skills.map((skill, index) => {
                   return (
                     <Chip key={index}>

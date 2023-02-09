@@ -16,9 +16,17 @@ import {
 
 export const Projects = [
   {
-    projectTitle: "Comment-section Component",
+    projectTitle: "Tirukaani",
     shortDescription:
-      "It is Simple, Reusable , flexible component which can be integrated to Web application",
+      "Web app to calculate the weights of material to make a silver Anklet screw. keep track of deals and manage the balance in format to ease running business",
+    techStack: ["React", "Css", "Bootstrap", "Firebase"],
+    demoLink: "https://tirukaani.netlify.app/",
+    codeBaseLink: "https://github.com/Arunkumar-R-R/Tirukaani",
+  },
+  {
+    projectTitle: "Comment Section Component",
+    shortDescription:
+      "Simple, Reusable , flexible component which can be integrated to Web application",
     techStack: ["React", "SCSS"],
     demoLink: "https://comment-component-demo.netlify.app/",
     codeBaseLink: "https://github.com/Arunkumar-R-R/react-comment-section",
