@@ -43,7 +43,7 @@ export default function Home() {
               <div className="text-tiny text-textPrimary mr-8">
                 Frontend Developer
               </div>
-              <Link href={"./Arunkumar R R (Frontend developer).pdf"}>
+              <Link href={"./Arunkumar R R.pdf"}>
                 <a
                   target="_blank"
                   className="p-[4px] rounded-sm flex text-tiny font-medium text-primaryColor cursor-pointer custom_sm:mt-[12px] hover:bg-primaryColor/[0.1]"
