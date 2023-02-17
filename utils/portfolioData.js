@@ -12,6 +12,7 @@ import {
   TailwindcssIcon,
   TwitterIcon,
   TypescriptIcon,
+  WebpackIcon,
 } from "./SvgIcon.js";
 
 export const Projects = [
@@ -70,6 +71,10 @@ const programmingLanguage = [
 ];
 
 const tooling = [
+  {
+    tech: "Webpack",
+    icon: WebpackIcon,
+  },
   {
     tech: "Git",
     icon: GitIcon,
