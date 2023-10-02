@@ -7,7 +7,7 @@ export function Card(props) {
   const { projectTitle, shortDescription, techStack, demoLink, codeBaseLink } = projectData;
 
   return (
-    <div className="border border-custom_black-500 rounded-[4px] py-5 px-5 shadow-sm hover:shadow-xl mb-7">
+    <div className="border  rounded-[4px] py-5 px-5 shadow-sm hover:shadow-lg mb-7">
       <div className="text-base font-semibold text-custom_black-800 ">
         {projectTitle}
       </div>
@@ -23,7 +23,7 @@ export function Card(props) {
         <Link href={demoLink}>
           <a
             target="_blank"
-            className="py-[2px] px-[6px] rounded-sm flex items-center mr-[30px] text-tiny text-primaryColor font-medium cursor-pointer hover:bg-primaryColor/[0.1]"
+            className="py-2 px-3 rounded-sm flex items-center mr-[30px] text-tiny text-blue-500 font-medium cursor-pointer hover:bg-blue-100"
           >
             Demo <DemoIcon className={"ml-[6px]"} />
           </a>
@@ -31,7 +31,7 @@ export function Card(props) {
         <Link href={codeBaseLink}>
           <a
             target="_blank"
-            className="py-[2px] px-[6px] rounded-sm flex items-center text-tiny  text-primaryColor font-medium cursor-pointer hover:bg-primaryColor/[0.1]"
+            className="py-2 px-3 rounded-sm flex items-center text-tiny  text-blue-500 font-medium cursor-pointer hover:bg-blue-100"
           >
             CodeBase <CodebaseIcon className={"ml-[6px]"} />
           </a>

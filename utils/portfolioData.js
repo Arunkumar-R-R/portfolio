@@ -43,13 +43,13 @@ export const areaOfInterest = [
 
 const javascriptFramework = [
   {
-    tech: "React",
-    icon: ReactIcon,
-  },
-  {
     tech: "Angular",
     icon: AngularIcon,
   },
+  {
+    tech: "React",
+    icon: ReactIcon,
+  }
 ];
 
 const cssEcosystem = [
@@ -115,6 +115,6 @@ export const socialMediaLinks = [
   {
     icon: EmailIcon,
     label: "Email",
-    source: "mailto:rrarunkumardgct@gmail.com",
+    source: "mailto:rrarunkumar.dev@gmail.com",
   },
 ];

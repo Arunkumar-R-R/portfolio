@@ -33,20 +33,20 @@ export default function Home() {
         <title>Arunkumar R R</title>
         <meta name="description" content="Arunkumar R R, Frontend developer" />
       </Head>
-      <main className="flex flex-col lg:w-auto w-[700px] lg:px-4 justify-center item-center mx-auto">
+      <main className="flex flex-col lg:w-auto w-[800px] lg:px-4 justify-center item-center mx-auto">
         <section className="my-[74px]">
           <animated.div style={{ ...springs }}>
-            <h1 className="text-xl font-semibold text-custom_black-800	leading-[36px]">
+            <h1 className="text-3xl font-semibold text-custom_black-800	leading-[36px]">
               Arunkumar R R
             </h1>
-            <div className="flex items-center flex-wrap mt-2">
-              <div className="text-tiny text-textPrimary mr-8">
-                Frontend Developer
+            <div className="flex items-center flex-wrap mt-3">
+              <div className="text-xl text-textPrimary mr-8">
+                Frontend Engineer
               </div>
               <Link href={"./Arunkumar R R.pdf"}>
                 <a
                   target="_blank"
-                  className="p-[4px] rounded-sm flex text-tiny font-medium text-primaryColor cursor-pointer custom_sm:mt-[12px] hover:bg-primaryColor/[0.1]"
+                  className="p-2 rounded-sm flex text-tiny font-medium text-blue-500 cursor-pointer hover:bg-blue-100"
                 >
                   <PdfIcon className={"mr-1"} />
                   View Resume
@@ -71,13 +71,8 @@ export default function Home() {
           <animated.div style={{ ...springs }}>
             <h2 className="text-lg font-semibold">About Me</h2>
             <p className="text-tiny my-[14px] text-textPrimary">
-              Hello there, Iam Arunkumar working in <strong>TCS</strong> as
-              Front-End Developer with client <strong>Credit Suisse</strong>.
-              Over past two years, i’ve build Components, written unit
-              testcases, Fixed production UI Bugs. I have strong passion for
-              building Functional User Interface, Reusable and accessible
-              Components.
-            </p>
+              Hello there, Iam Arunkumar working in <strong>Zuper</strong> as
+              Frontend Engineer. Previously, i worked in <strong>TCS</strong> as Frontend Developer for about 2 years 8 months. </p>
             <div className="flex flex-col">
               <h3 className="text-base font-semibold">Skills</h3>
               <div className="flex flex-wrap my-[14px]">
