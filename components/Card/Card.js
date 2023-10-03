@@ -7,14 +7,14 @@ export function Card(props) {
   const { projectTitle, shortDescription, techStack, demoLink, codeBaseLink } = projectData;
 
   return (
-    <div className="border  rounded-[4px] py-5 px-5 shadow-sm hover:shadow-lg mb-7">
+    <div className="w-full border  rounded-[4px] py-5 px-5 shadow-sm hover:shadow-lg mb-7">
       <div className="text-base font-semibold text-custom_black-800 ">
         {projectTitle}
       </div>
       <div className="text-tiny mt-[12px] text-textPrimary">
         {shortDescription}
       </div>
-      <div className="flex mt-[12px]">
+      <div className="flex flex-wrap mt-[12px]">
         {techStack.map((tech, index) => {
           return <Chip key={index}>{tech}</Chip>;
         })}

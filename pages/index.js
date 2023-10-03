@@ -28,12 +28,12 @@ export default function Home() {
   }, [api]);
 
   return (
-    <div>
+    <div className="w-full flex justify-center">
       <Head>
         <title>Arunkumar R R</title>
         <meta name="description" content="Arunkumar R R, Frontend developer" />
       </Head>
-      <main className="flex flex-col lg:w-auto w-[800px] lg:px-4 justify-center item-center mx-auto">
+      <main className="flex flex-col w-full max-w-4xl px-4 lg:w-auto lg:px-4 sm:px-2 justify-center item-center mx-auto">
         <section className="my-[74px]">
           <animated.div style={{ ...springs }}>
             <h1 className="text-3xl font-semibold text-custom_black-800	leading-[36px]">
